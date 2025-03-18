@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-color: #74a892;
+    --primary-color: #524f4f;
+    --accent-color: #FF7F50;
+}
+
+
+footer{
+    background-color: var(--background-color);
+    
+}
+
+h3{
+    color: var(--primary-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 4em;
+}
+
+hr{
+    border: 1px solid var(--accent-color);  
+    margin: 30px auto;
+}
+
+label{
+    display: flex;
+    gap: 10px;
+}
+
+span{
+    color: var(--accent-color);
+}
+/* welcome message */
+.welcome-message{
+
+    max-width: 790px;
+    margin: 307px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Vesper Libre;
+    color: var(--primary-color);
+}
+
+/* containers */
+.box{
+   max-width: 1200px;
+   margin: auto;
+   padding: 50px;
+}
+
+.box-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* styles for the buttons */
+.btn{
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* user input part sytles*/
+.subscription-section{
+    line-height: 4em;
+}
+
+#subscription-heading{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.submit-btn{
+    background-color: var(--accent-color);
+    color: #fff; 
+    padding: 9px 20px; 
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.submit-btn:hover{
+    background-color: var(--background-color); 
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* quick links and technology styles */
+.columns{
+    display: grid;
+    justify-items: center;
+}
+
+.nav-links li{
+    list-style: none;
+    line-height: 1.8em;
+}
+
+.nav-links a{
+    font-family: Roboto;
+    list-style: none;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* logo styles */
+.logo{
+    width: 200px;
+}
+
+/* media querys */
+@media (max-width:768px) {
+    /* container */
+    .box-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+     /*user input styles */ 
+    .subscription-section{
+        grid-area: 1 / 1 / 2 / 4;
+        height: 120px;
+    }
+    
+    /* quick links styles */
+    .quick-links{
+        display: grid;
+        justify-items: start;
+    }
+}
+
+@media (max-width:375px) {
+    label{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    /* container */
+    .box-info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* user input styles */
+    .subscription-section{
+        line-height: 0em;
+    }
+    #subscription-heading{
+        line-height: 1.5em;
+    }
+    
+    /* quick link styles */
+    .quick-links{
+        margin-top: 30px;
+    }
+
+    /* technologies styles */
+    .technologies{ 
+        display: flex;
+        justify-items: start; 
+    }
+}

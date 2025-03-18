@@ -3,18 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Footer</title>
 </head>
 <body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
+    <div class="welcome-message">
+        <h1> please <span>scroll</span> down</h1>
+        <h2>thank you</h2>
+    </div>
+
+<footer class="bg-[#659f8f] dark:bg-[#313131]">
+    <div class="box">
+
+        <div class="box-info">
+            <section class="subscription-section">
+                <h3 id="subscription-heading">Subscribe to our newsletter for update</h3>
+                    <label for="address">
+                        <input type="address" name="address" id="address" placeholder="Enter address" class="btn">
+                        <input type="submit" value="Subscribe" class="btn submit-btn">
+                    </label> 
+            </section>
+
+            <section class="quick-links columns">
+                <nav>
+                   <h3>Quick link</h3>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Who We're</a></li>
+                        <li><a href="#">Our Philosophy</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="technologies columns">
+                <nav> 
+                  <h3>Technologies</h3>
+                    <ul class="nav-links">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>  <!-- the end of the box information container -->
+       
+            <hr>
+
         <div class="container px-6 py-12 mx-auto">
             <div class="flex">
                 <a href="#">
-                    <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="CodeSpace Logo">
+                     <img class="w-auto h-7 logo" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="CodeSpace Logo">
                 </a>
             </div>
         </div>
-    </footer>
+
+    </div> <!-- the end of the box container -->
+</footer>
 </body>
 </html>
