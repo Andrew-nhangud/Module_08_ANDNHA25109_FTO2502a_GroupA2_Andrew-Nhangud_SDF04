@@ -114,6 +114,20 @@ span{
     width: 200px;
 }
 
+/* styles for social icons  */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials img{
+    height: 30px;
+}
+.socials a{
+    padding: 10px;
+}
+
+
 /* media querys */
 @media (max-width:768px) {
     /* container */
@@ -165,5 +179,11 @@ span{
     .technologies{ 
         display: flex;
         justify-items: start; 
+    }
+    
+      /* styles for the social icon */
+     .flex{
+        display: flex;
+        flex-direction: column;
     }
 }
