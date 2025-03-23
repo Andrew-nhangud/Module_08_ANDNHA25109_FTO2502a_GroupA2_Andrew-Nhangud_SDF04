@@ -50,13 +50,13 @@ span{
 }
 
 /* containers */
-.box{
+.Container{
    max-width: 1200px;
    margin: auto;
    padding: 50px;
 }
 
-.box-info{
+.Container-info{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -131,7 +131,7 @@ span{
 /* media querys */
 @media (max-width:768px) {
     /* container */
-    .box-info{
+    .Container-info{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -157,7 +157,7 @@ span{
     }
 
     /* container */
-    .box-info{
+    .Container-info{
         display: flex;
         flex-direction: column;
     }
